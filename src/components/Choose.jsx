@@ -1,5 +1,5 @@
 
-function Card({ src, name }) {
+function Choose({ src, name }) {
     return (
         <div className="col-12 col-md-6 col-lg-4 mb-2">
             <div className="card" id="card">
@@ -14,9 +14,8 @@ function Card({ src, name }) {
                     <button className="btn btn-primary d-block mx-auto my-2 ">Adopt</button>
                 </div>
             </div >
-
         </div>
     )
 }
 
-export default Card;
+export default Choose

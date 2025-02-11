@@ -1,4 +1,6 @@
-function Hero() {
+import { Link, Outlet } from "react-router"
+
+function Home() {
     return (
         <div className="hero-section">
             <div className="container">
@@ -11,8 +13,8 @@ function Hero() {
                             Start your journey of pet adoption today.
                         </p>
                         <div className="mt-3">
-                            <a href="#" className="btn btn-primary me-2">Adopt a Pet</a>
-                            <a href="#" className="btn btn-outline-primary">Learn More</a>
+                            <Link to="/adopt" className="btn btn-primary">Go to Adopt</Link>
+                            <Link to="/contact" className="btn btn-outline-primary">Go to Contact</Link>
                         </div>
                         <div className="mt-4 d-flex gap-4">
                             <div>
@@ -34,8 +36,9 @@ function Hero() {
                     </div>
                 </div>
             </div>
+            <Outlet />
         </div>
     )
 }
 
-export default Hero;
+export default Home
